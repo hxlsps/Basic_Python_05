@@ -6,6 +6,9 @@ print(f'{str_txt[-4:]},\n{str_txt[1:4]},\n{str_txt[:5]},\n{str_txt[1:]} ')
 #3. Loop through string
 for i in str_txt:
     print(i)
+# + index
+for index, i in enumerate(str_txt):
+    print(index,i)
 #4. Length of string
 print(len(str_txt))
 #5. Check if string str_txt contains another string. If has, print start position of that substring.
