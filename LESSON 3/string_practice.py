@@ -4,8 +4,8 @@ print(str_txt)
 #2. String as array: display some characters of str_txt
 print(f'{str_txt[-4:]},\n{str_txt[1:4]},\n{str_txt[:5]},\n{str_txt[1:]} ')
 #3. Loop through string
-for value in range(len(str_txt)):
-    print(str_txt[value])
+for i in str_txt:
+    print(i)
 #4. Length of string
 print(len(str_txt))
 #5. Check if string str_txt contains another string. If has, print start position of that substring.
