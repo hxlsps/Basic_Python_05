@@ -13,6 +13,10 @@ print(my_list)
 for item in my_list:
     if type(item) is int or type(item) is float:
         print(item**2)
+#method 2:
+#for x in range(len(my_list)):
+#    if str(my_list[x]).isnumeric or str(my_list[x]).isdecimal:
+#        print(my_list[x])
 #6 Add some single values and iterable values to my_list:
 my_list.append('Q5')
 my_list.append(936475161)
@@ -64,13 +68,11 @@ for item in my_list_num:
 print('The maximum value is ', max)
 print('The minimum value is ', min)
 #13 Remove duplicate values from my_list_num, if have  <-- CAN COI LAI
-my_list_num.append(2000)
-my_list_num.append(2000)
-print(my_list_num)
-for item in my_list_num:
-    if my_list_num.count(item)>=2:
-        my_list_num.remove(item)
-print(my_list_num)
+new_list=[]
+for i in my_list_num:
+    if i not in new_list:
+        new_list.append(i)
+print('List after delete duplicat values: ', new_list)
 #14 Display odd and even number of my_list_num
 odd_number=[]
 even_number=[]
