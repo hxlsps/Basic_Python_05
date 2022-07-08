@@ -4,8 +4,8 @@ my_list=['Loc',11.4,2000,22,'TPHCM','DHSP']
 for item in my_list:
     print(item)
 #3 Count the number of each items in my_list
-for i, item in enumerate(my_list):
-    print(i, item)
+for item in my_list:
+    print(item,' has ', my_list.count(item))
 #4 Reverse the order of the item in my_list
 my_list.reverse()
 print(my_list)
@@ -49,16 +49,27 @@ for item in my_list:
 my_list_num.sort()
 print(my_list_num)
 #12 Find the maximum/ minimum values of my_list_num
+#Method 1:
 print(max(my_list_num))
 print(min(my_list_num))
-#13 Remove duplicate values from my_list_num, if have
+#Method 2:
+max=my_list_num[0]
+min=my_list_num[0]
+for item in my_list_num:
+    if item > max:
+        max=item
+for item in my_list_num:
+    if item<min:
+        min=item
+print('The maximum value is ', max)
+print('The minimum value is ', min)
+#13 Remove duplicate values from my_list_num, if have  <-- CAN COI LAI
+my_list_num.append(2000)
 my_list_num.append(2000)
 print(my_list_num)
 for item in my_list_num:
     if my_list_num.count(item)>=2:
-        for itemm in my_list_num:
-            if itemm == item:
-                my_list_num.remove(itemm)
+        my_list_num.remove(item)
 print(my_list_num)
 #14 Display odd and even number of my_list_num
 odd_number=[]
