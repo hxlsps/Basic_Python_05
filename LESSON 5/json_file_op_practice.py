@@ -42,6 +42,25 @@ def create_new_json_from_existing():
 create_new_json_from_existing()
 
 # 4. Write a program to add new 3 users into existing json file (users.json):
+users={
+    {
+        'name': 'John',
+        'email': 'john@example.com',
+        'age': 10,
+        'address': 'john street'
+    },
+    {
+        'name': 'su',
+        'email': 'su@example.com',
+        'age': 18,
+        'address': 'su street'
+    }
+}
+def add_user():
+    with open('sample.json','a', encoding='utf-8') as f:
+        obj = json.load(f)
+        json.dump(f,users)
 
+#add_user()
 
 # 5. Write a program to delete users which have age is 18 from users.json file.
