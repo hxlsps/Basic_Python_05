@@ -12,6 +12,7 @@ def read_file_distance_name():
             latitude=feature['geocodes']['main']['latitude']
             longtitude=feature['geocodes']['main']['longitude']
             print(f"Latitude={latitude}, Longtitude={longtitude}")
+
 #read_file_distance_name()
 
 # 2. Write a program to:
@@ -32,8 +33,13 @@ def store_python_object():
 #store_python_object()           
 
 # 3. Write a program to to create a new json file from an existing json file (sample_w.json)
+def create_new_json_from_existing():
+    with open('sample_w_new.json','w') as sn:
+        with open('sample_w.json','r',encoding='utf-8') as f:
+            json_ob=json.load(f)
+            json.dump(json_ob,sn)
 
-
+create_new_json_from_existing()
 
 # 4. Write a program to add new 3 users into existing json file (users.json):
 
