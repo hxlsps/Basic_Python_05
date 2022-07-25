@@ -18,17 +18,17 @@ class Student:
     def get_sex(self):
         return self.sex
 
-    def set_name(self):
-        return self.name
+    def set_name(self,name):
+        self.name=name
     
-    def set_age(self):
-        return self.age
+    def set_age(self,age):
+        self.age=age
 
-    def set_email(self):
-        return self.email
+    def set_email(self,email):
+        self.email=email
 
-    def set_sex(self):
-        return self.sex
+    def set_sex(self,sex):
+        self.sex=sex
 
 student_1=Student('Loc',22,'xuanloc11042000@gmail.com','male')
 
@@ -78,7 +78,6 @@ student_1.show_details()
 
 #4
 import math
-from pickletools import read_unicodestring1
 # 4.1 Define a class named Geometry with 2 methods: get_area() and get_perimeter().
 class Geometry:
     def __init__(self):
