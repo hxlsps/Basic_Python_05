@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="9" skipped="0" tests="15" time="0.439" timestamp="2022-07-29T17:33:41.554822" hostname="DESKTOP-QVVSI1C"><testcase classname="test_example_1" name="test_sqrt" time="0.003" /><testcase classname="test_example_1" name="test_square" time="0.001"><failure message="assert (7 * 7) == 40">def test_square():
+        num = 7
+&gt;       assert 7*7 == 40
+E       assert (7 * 7) == 40
+
+test_example_1.py:9: AssertionError</failure></testcase><testcase classname="test_example_1" name="test_quality" time="0.002"><failure message="assert 10 == 11">def test_quality():
+&gt;       assert 10 == 11
+E       assert 10 == 11
+
+test_example_1.py:12: AssertionError</failure></testcase><testcase classname="test_example_2" name="test_greater" time="0.002" /><testcase classname="test_example_2" name="test_less" time="0.002"><failure message="assert 30 &lt; 30">def test_less():
+        num = 30
+&gt;       assert num &lt; 30
+E       assert 30 &lt; 30
+
+test_example_2.py:8: AssertionError</failure></testcase><testcase classname="test_example_3" name="test_divisiable_by_3" time="0.002"><failure message="assert (34 % 3) == 0">input_value = 34
+
+    def test_divisiable_by_3(input_value):
+&gt;       assert input_value % 3 == 0
+E       assert (34 % 3) == 0
+
+test_example_3.py:9: AssertionError</failure></testcase><testcase classname="test_example_3" name="test_divisiable_by_5" time="0.001"><failure message="assert (34 % 5) == 0">input_value = 34
+
+    def test_divisiable_by_5(input_value):
+&gt;       assert input_value % 5 == 0
+E       assert (34 % 5) == 0
+
+test_example_3.py:12: AssertionError</failure></testcase><testcase classname="test_example_4" name="test_multiply[1-3]" time="0.004" /><testcase classname="test_example_4" name="test_multiply[2-6]" time="0.001" /><testcase classname="test_example_4" name="test_multiply[4-12]" time="0.004" /><testcase classname="test_example_4" name="test_multiply[8-24]" time="0.002" /><testcase classname="test_example_4" name="test_multiply[9-25]" time="0.002"><failure message="assert (9 * 3) == 25">input = 9, output = 25
+
+    @pytest.mark.parametrize('input, output', [(1,3), (2,6), (4,12), (8,24), (9,25)])
+    def test_multiply(input, output):
+&gt;       assert input * 3 == output
+E       assert (9 * 3) == 25
+
+test_example_4.py:5: AssertionError</failure></testcase><testcase classname="test_example_5" name="test_sqrt_fails" time="0.002"><failure message="assert 5.0 == 6&#10; +  where 5.0 = &lt;built-in function sqrt&gt;(25)&#10; +    where &lt;built-in function sqrt&gt; = math.sqrt">def test_sqrt_fails():
+        num = 25
+&gt;       assert math.sqrt(num) == 6
+E       assert 5.0 == 6
+E        +  where 5.0 = &lt;built-in function sqrt&gt;(25)
+E        +    where &lt;built-in function sqrt&gt; = math.sqrt
+
+test_example_5.py:7: AssertionError</failure></testcase><testcase classname="test_example_5" name="test_square_fails" time="0.002"><failure message="assert (7 * 7) == 40">def test_square_fails():
+        num = 7
+&gt;       assert num * num == 40
+E       assert (7 * 7) == 40
+
+test_example_5.py:11: AssertionError</failure></testcase><testcase classname="test_example_5" name="test_equal_fails" time="0.002"><failure message="assert 10 == 11">def test_equal_fails():
+&gt;       assert 10 == 11
+E       assert 10 == 11
+
+test_example_5.py:14: AssertionError</failure></testcase></testsuite></testsuites>
