@@ -1,0 +1,27 @@
+Chương trình:
+Viết chương trình quản lý thông tin điểm thi của Học viên với các đối tượng sau:
++ Học viên: Mã học viên, Họ tên, Ngày sinh, Giới tính, Địa chỉ, Số điện thoại, Email.
++ Môn học: Mã môn học, Tên môn học
++ Điểm thi: Mã học viên, Mã môn học, Điểm quá trình, Điểm kết thúc
+
+Yêu cầu chức năng:
++ Tạo các giao diện người dùng trong terminal(người dùng có thể di chuyển qua lại giữa các màn hình):
+	- Màn hình Menu chính: hiển thị danh sách các chức năng của chương trình
+	- Màn hình Quản lý thông tin Học viên
+	- Màn hình Quản lý thông tin Môn học
+	- Màn hình Quản lý thông tin Điểm thi
++ Quản lý thông tin Học viên: Xem/Thêm/Sửa/Xoá/Tìm kiếm học viên theo ten va ma
++ Quản lý thông tin Môn học: Xem/Thêm/Sửa/Xoá/Tìm kiếm môn học theo ma va ten
++ Quản lý thông tin Điểm thi: Xem/Thêm/Sửa điểm/Xoá điểm/Tra cứu điểm theo Mã học viên hoặc Họ tên học viên/Thống kê danh sách các Học viên theo các mức Điểm tổng kết (A (90 <= điểm <= 100), B (70 <= điểm < 90), C (50 <= điểm < 70), D (điểm < 50)). Điểm tổng kết tính bằng công thức: Điểm tổng kết = (Điểm quá trình + Điểm kết thúc * 2) / 3
++ Xuất bảng điểm ra tệp tin txt. Thông tin kết xuất bao gồm: Mã học viên, Họ tên, Ngày sinh, Giới tính, Địa chỉ, Số điện thoại, Email, Tên môn học, Điểm quá trình, Điểm kết thúc
+
+Note:
++ Dữ liệu ban đầu được lưu trong 3 file json:
+●	students.json: File chứa thông tin học viên
+●	subjects.json: File chưa thông tin môn học
+●	scores.json: File chưa thông tin điểm
++ Kiểm tra dữ liệu đầu vào nhập từ bàn phím (Validate input data), nếu không hợp lệ sẽ thông báo lỗi và yêu cầu nhập lại
++ Bắt lỗi (Handle Exception) với những xử lý có thể gây lỗi trong quá trình chạy chương trình (runtime)
++ Phân nhóm các đối tượng vào các package/module phù hợp (package là thư mục, module là tệp tin .py). Khi cần sử dụng thì import vào.
+
+https://drive.google.com/drive/folders/1VQxyjBhzyjgCj5JBeD5kmJ6uFB7IM20w
