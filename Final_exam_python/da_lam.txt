@@ -1,0 +1,16 @@
+Những việc đã làm được:
++ Tạo các màn hình giao diện dòng lệnh (CMD/Terminal):
+	- Màn hình Menu chính: hiển thị danh sách các chức năng của chương trình
+	- Màn hình Quản lý thông tin Học viên
+	- Màn hình Quản lý thông tin Môn học
+	- Màn hình Quản lý thông tin Điểm thi
++ Quản lý thông tin Học viên: Thêm/Sửa/Xoá/Tìm kiếm học viên theo Mã học viên, Họ tên, Email
++ Quản lý thông tin Môn học: Thêm/Sửa/Xoá/Tìm kiếm môn học theo Mã môn học, Tên môn học
++ Quản lý thông tin Điểm thi: Nhập điểm/Sửa điểm/Tra cứu điểm theo Mã học viên hoặc Họ tên học viên. Điểm tổng kết tình bằng công thức: Điểm tổng kết = (Điểm quá trình + Điểm kết thúc * 2) / 3
+
+Những việc chưa làm được:
++ Kết xuất bảng điểm ra tệp tin Json. Thông tin kết xuất bao gồm: Mã học viên, Họ tên, Ngày sinh, Giới tính, Địa chỉ, Số điện thoại, Email, Tên môn học, Điểm quá trình, Điểm kết thúc, Điểm tổng kết
++ Unittest
++ Một số exception k handle kĩ
++ Chua xuat dc file json
++ Bi loi module
