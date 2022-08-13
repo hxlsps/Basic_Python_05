@@ -185,8 +185,71 @@ class Student_info(Student):
 
             check = input('Do you want to continue (y/n): ')
 
-Thang = Student_info()
-Thang.search()
+class Subjects(Student):
+    def __init__(self):
+        self.subjects = Student._load_json('subjects.json')['subjects']['subject']
+        super().__init__()
+
+    def get_subject_index(self, subject_info):
+        for index, subject in enumerate(self.subjects):
+            if subject['Student_ID'] == subject_info or subject['Name'] == subject_info:
+                return index
+    
+    def _insert_of_edit_json(self):
+        student_dict = Student._load_json('subjects.json')
+        student_dict['subjects'] = {'subjects': self.subjects}
+        return student_dict
+
+    def get_info(self):
+        pass
+
+    def insert(self):
+        pass
+
+    def edit(self):
+        pass
+
+    def delete(self):
+        pass
+
+    def search(self):
+        pass
+
+class Score(Student):
+    def __init__(self):
+        self.scores = Student._load_json('scores.json')['subjects']['subject']
+        super().__init__()
+
+    def get_subject_index(self, score_info):
+        for index, score in enumerate(self.scores):
+            if score['Student_ID'] == score_info or score['Name'] == score_info:
+                return index
+    
+    def _insert_of_edit_json(self):
+        student_dict = Student._load_json('scores.json')
+        student_dict['scores'] = {'score': self.scores}
+        return student_dict
+    
+    def get_info(self):
+        pass
+
+    def insert(self):
+        pass
+
+    def edit(self):
+        pass
+
+    def delete(self):
+        pass
+
+    def search(self):
+        pass
+
+    def analysis():
+        pass
+
+    def average_score():
+        pass
 
         
     
